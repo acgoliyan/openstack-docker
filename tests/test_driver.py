@@ -47,7 +47,7 @@ class DockerDriverTestCase(_VirtDriverTestCase, test.TestCase):
                        fake_get_registry_port)
 
     #NOTE(bcwaldon): This exists only because _get_running_instance on the
-    # base class will not let us set a custom disk/container_format.
+    # base class will not let us to set a custom disk/container_format.
     def _get_running_instance(self):
         instance_ref = utils.get_test_instance()
         network_info = utils.get_test_network_info()
